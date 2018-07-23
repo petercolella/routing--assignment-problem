@@ -3,6 +3,7 @@ import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 
 import Courses from './containers/Courses/Courses';
 import Users from './containers/Users/Users';
+import Course from './containers/Course/Course';
 
 import './App.css';
 
@@ -44,8 +45,9 @@ class App extends Component {
               <li>Redirect requests to /all-courses to /courses (=> Your "Courses" page)</li>
             </ol>
           } />
-          <Route path="/courses" component={Courses} />
+          <Route path="/courses" exact component={Courses} />
           <Route path="/users" component={Users} />
+          <Route path="/courses/course" component={Course} />
         </div>
       </BrowserRouter>
     );
