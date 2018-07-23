@@ -4,6 +4,8 @@ import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 import Courses from './containers/Courses/Courses';
 import Users from './containers/Users/Users';
 
+import './App.css';
+
 class App extends Component {
   render () {
     return (
@@ -13,10 +15,13 @@ class App extends Component {
             <nav>
               <ul>
                 <li><NavLink
+                  to="/"
+                  exact
+                >Home</NavLink>
+                </li>
+                <li><NavLink
                   to="/courses/"
                   exact
-                // activeClassName="my-active"
-                // 
                 >Courses</NavLink>
                 </li>
                 <li><NavLink
