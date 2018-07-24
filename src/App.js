@@ -47,7 +47,7 @@ class App extends Component {
           } />
           <Route path="/courses" exact component={Courses} />
           <Route path="/users" component={Users} />
-          <Route path="/courses/:courseId" component={Course} />
+          <Route path="/courses/:courseId/:courseTitle" component={Course} />
         </div>
       </BrowserRouter>
     );
