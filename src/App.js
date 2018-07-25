@@ -4,6 +4,7 @@ import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 import Courses from './containers/Courses/Courses';
 import Users from './containers/Users/Users';
 import Course from './containers/Course/Course';
+import NoMatch from './components/NoMatch/NoMatch';
 
 import './App.css';
 
@@ -48,6 +49,7 @@ class App extends Component {
           <Route path="/courses" component={Courses} />
           <Route path="/users" component={Users} />
           {/* <Route path="/courses/:courseId" component={Course} /> */}
+          <Route component={NoMatch} />
         </div>
       </BrowserRouter>
     );
